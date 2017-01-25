@@ -2,8 +2,6 @@ organization := "zamblauskas"
 
 name := "sbt-examplestest"
 
-version := "0.1.0-SNAPSHOT"
-
 scalaVersion := "2.10.6"
 
 libraryDependencies ++= Seq(
@@ -15,3 +13,5 @@ libraryDependencies ++= Seq(
 )
 
 sbtPlugin := true
+
+licenses := ("MIT", url("https://opensource.org/licenses/MIT")) :: Nil
