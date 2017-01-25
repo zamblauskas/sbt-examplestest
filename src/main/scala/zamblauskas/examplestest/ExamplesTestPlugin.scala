@@ -1,7 +1,7 @@
 package zamblauskas.examplestest
 
-import sbt.Keys.{managedSourceDirectories, _}
 import sbt._
+import sbt.Keys._
 import sbt.plugins.JvmPlugin
 
 object ExamplesTestPlugin extends AutoPlugin {
@@ -25,7 +25,7 @@ object ExamplesTestPlugin extends AutoPlugin {
           examplesTestInputFiles.value.flatMap(writer.write)
       }
     },
-    sourceGenerators in Test <+= examplesTestGenTests,
+    sourceGenerators in Test += examplesTestGenTests.taskValue,
     watchSources ++= examplesTestInputFiles.value
   )
 }
