@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/zamblauskas/sbt-examplestest.svg?branch=master)](https://travis-ci.org/zamblauskas/sbt-examplestest)
+
 About
 ==============================
 SBT plugin to generate unit tests for code examples in markdown (e.g. README) files.
