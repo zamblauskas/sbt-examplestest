@@ -2,8 +2,6 @@ organization := "zamblauskas"
 
 name := "sbt-examplestest"
 
-scalaVersion := "2.10.6"
-
 libraryDependencies ++= Seq(
   "com.vladsch.flexmark"  %  "flexmark"    % "0.11.1",
   "com.google.guava"      %  "guava"       % "21.0",
