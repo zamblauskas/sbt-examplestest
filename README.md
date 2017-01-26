@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/zamblauskas/sbt-examplestest.svg?branch=master)](https://travis-ci.org/zamblauskas/sbt-examplestest)
+[![Bintray Download](https://api.bintray.com/packages/zamblauskas/sbt-plugins/sbt-examplestest/images/download.svg)](https://bintray.com/zamblauskas/sbt-plugins/sbt-examplestest/_latestVersion)
 
 About
 ==============================
@@ -7,11 +8,12 @@ SBT plugin to generate unit tests for code examples in markdown (e.g. README) fi
 Usage
 ==============================
 
-Add to your `project/plugins.sbt`:
+Package is available at [Bintray](https://bintray.com/zamblauskas/sbt-plugins/sbt-examplestest).
+Check for the latest version and add to your `project/plugins.sbt`:
 ```
-resolvers += Resolver.bintrayRepo("zamblauskas", "maven")
+resolvers += Resolver.bintrayIvyRepo("zamblauskas", "sbt-plugins")
 
-addSbtPlugin("zamblauskas" % "sbt-examplestest" % "0.1.0")
+addSbtPlugin("zamblauskas" % "sbt-examplestest" % "<latest_version>")
 ```
 
 Plugin will be enabled by default.  
