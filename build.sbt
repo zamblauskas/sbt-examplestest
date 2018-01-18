@@ -2,12 +2,14 @@ organization := "zamblauskas"
 
 name := "sbt-examplestest"
 
+scalaVersion := "2.12.4"
+
 libraryDependencies ++= Seq(
-  "com.vladsch.flexmark"  %  "flexmark"    % "0.11.1",
-  "com.google.guava"      %  "guava"       % "21.0",
-  "commons-io"            %  "commons-io"  % "2.5",
-  "org.scalatest"         %% "scalatest"                   % "3.0.1" % Test,
-  "org.scalamock"         %% "scalamock-scalatest-support" % "3.4.2" % Test
+  "com.vladsch.flexmark"  %  "flexmark"    % "0.28.32",
+  "com.google.guava"      %  "guava"       % "23.6-jre",
+  "commons-io"            %  "commons-io"  % "2.6",
+  "org.scalatest"         %% "scalatest"                   % "3.0.4" % Test,
+  "org.scalamock"         %% "scalamock-scalatest-support" % "3.6.0" % Test
 )
 
 sbtPlugin := true

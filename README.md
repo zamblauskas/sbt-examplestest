@@ -25,7 +25,7 @@ Dependencies
 
 Your project must have a `ScalaTest` library on path. E.g.:
 ```
-"org.scalatest" %% "scalatest" % "3.0.0" % Test
+"org.scalatest" %% "scalatest" % "3.0.4" % Test
 ```
 
 Example
