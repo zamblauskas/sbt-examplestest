@@ -10,7 +10,7 @@ Usage
 
 Package is available at [Bintray](https://bintray.com/zamblauskas/sbt-plugins/sbt-examplestest).
 Check for the latest version and add to your `project/plugins.sbt`:
-```
+```scala
 resolvers += Resolver.bintrayIvyRepo("zamblauskas", "sbt-plugins")
 
 addSbtPlugin("zamblauskas" % "sbt-examplestest" % "<latest_version>")
@@ -29,7 +29,7 @@ Dependencies
 ==============================
 
 Your project must have a `ScalaTest` library on path. E.g.:
-```
+```scala
 "org.scalatest" %% "scalatest" % "3.0.4" % Test
 ```
 
@@ -61,7 +61,7 @@ Configuration
 ==============================
 
 Defaults should work for most of the projects, but you can change a few SBT keys if needed.
-```
+```scala
 // path to markdown files
 examplesTestInputFiles := (baseDirectory.value * "*.md").filter(_.isFile).get
 
