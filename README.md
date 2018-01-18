@@ -16,6 +16,11 @@ resolvers += Resolver.bintrayIvyRepo("zamblauskas", "sbt-plugins")
 addSbtPlugin("zamblauskas" % "sbt-examplestest" % "<latest_version>")
 ```
 
+| version  | SBT  |
+|----------|------|
+| 0.1.1    | 0.13 |
+| 0.1.2+   | 1.x  |
+
 Plugin will be enabled by default.  
 It will find all `.md` files in the base directory, generate unit test code for every Scala block (marked as \`\`\` scala) and put it in `target/scala-<version>/src_managed/test`.  
 Tests will be run during `sbt test`.
