@@ -13,10 +13,10 @@ class ScalaTestGenerator$Test extends AnyFunSuite with Matchers {
 
     val generated = ScalaTestGenerator.generate("GeneratorTest", examples)
 
-    generated shouldBe """import org.scalatest.funsuite.AnyFunSuite
+    generated shouldBe """import org.scalatest.funspec.AnyFunSpec
                          |import org.scalatest.matchers.should.Matchers
                          |
-                         |class GeneratorTestTest extends AnyFunSuite with Matchers {
+                         |class GeneratorTestTest extends AnyFunSpec with Matchers {
                          |  describe("GeneratorTest") {
                          |    it("code block #0") {
                          |code line 1
