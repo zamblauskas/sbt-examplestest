@@ -1,8 +1,9 @@
 package zamblauskas.examplestest
 
-import org.scalatest.{FunSuite, Matchers}
+import org.scalatest.funsuite.AnyFunSuite
+import org.scalatest.matchers.should.Matchers
 
-class ScalaTestGenerator$Test extends FunSuite with Matchers {
+class ScalaTestGenerator$Test extends AnyFunSuite with Matchers {
 
   test("generate test code") {
     val examples = Seq(
@@ -12,9 +13,10 @@ class ScalaTestGenerator$Test extends FunSuite with Matchers {
 
     val generated = ScalaTestGenerator.generate("GeneratorTest", examples)
 
-    generated shouldBe """import org.scalatest.{FunSpec, Matchers}
+    generated shouldBe """import org.scalatest.funsuite.AnyFunSuite
+                         |import org.scalatest.matchers.should.Matchers
                          |
-                         |class GeneratorTestTest extends FunSpec with Matchers {
+                         |class GeneratorTestTest extends AnyFunSuite with Matchers {
                          |  describe("GeneratorTest") {
                          |    it("code block #0") {
                          |code line 1

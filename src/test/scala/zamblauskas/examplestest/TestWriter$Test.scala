@@ -1,10 +1,11 @@
 package zamblauskas.examplestest
 
 import org.scalamock.scalatest.MockFactory
-import org.scalatest.{FunSuite, Matchers}
+import org.scalatest.funsuite.AnyFunSuite
+import org.scalatest.matchers.should.Matchers
 import zamblauskas.examplestest.Util._
 
-class TestWriter$Test extends FunSuite with Matchers with Tmp with MockFactory {
+class TestWriter$Test extends AnyFunSuite with Matchers with Tmp with MockFactory {
 
   test("generate tests for given code block types") { withTempDir2 { (inputDir, outputDir) =>
     val extractor = mock[CodeExampleExtractor]
