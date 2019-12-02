@@ -1,9 +1,10 @@
 package zamblauskas.examplestest
 
-import org.scalatest.{FunSuite, Matchers}
+import org.scalatest.funsuite.AnyFunSuite
+import org.scalatest.matchers.should.Matchers
 import zamblauskas.examplestest.Util._
 
-class FlexMarkCodeExampleExtractor$Test extends FunSuite with Matchers {
+class FlexMarkCodeExampleExtractor$Test extends AnyFunSuite with Matchers {
 
   test("extract all code blocks") {
     val examples = FlexMarkCodeExampleExtractor.extract(readResource("README.md"))

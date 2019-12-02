@@ -12,9 +12,10 @@ trait TestGenerator {
 object ScalaTestGenerator extends TestGenerator {
 
   def generate(baseName: String, examples: Seq[CodeExample]): String = {
-    s"""import org.scalatest.{FunSpec, Matchers}
+    s"""import org.scalatest.funspec.AnyFunSpec
+       |import org.scalatest.matchers.should.Matchers
        |
-       |class ${baseName}Test extends FunSpec with Matchers {
+       |class ${baseName}Test extends AnyFunSpec with Matchers {
        |  describe("$baseName") {
        |${examples.zipWithIndex.map(generateExample).mkString("\n")}
        |  }

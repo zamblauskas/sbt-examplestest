@@ -16,13 +16,14 @@ resolvers += Resolver.bintrayIvyRepo("zamblauskas", "sbt-plugins")
 addSbtPlugin("zamblauskas" % "sbt-examplestest" % "<latest_version>")
 ```
 
-| version  | SBT  |
-|----------|------|
-| 0.1.1    | 0.13 |
-| 0.1.2+   | 1.x  |
+| version  | SBT  | scalatest |
+|----------|------|-----------|
+| 0.1.1    | 0.13 | 3.0.4     |
+| 0.1.2    | 1.x  | 3.0.4     |
+| 0.2.0+   | 1.x  | 3.1.0     |
 
-Plugin will be enabled by default.  
-It will find all `.md` files in the base directory, generate unit test code for every Scala block (marked as \`\`\` scala) and put it in `target/scala-<version>/src_managed/test`.  
+Plugin will be enabled by default.
+It will find all `.md` files in the base directory, generate unit test code for every Scala block (marked as \`\`\` scala) and put it in `target/scala-<version>/src_managed/test`.
 Tests will be run during `sbt test`.
 
 Dependencies
@@ -30,7 +31,7 @@ Dependencies
 
 Your project must have a `ScalaTest` library on path. E.g.:
 ```scala
-"org.scalatest" %% "scalatest" % "3.0.4" % Test
+"org.scalatest" %% "scalatest" % "3.1.0" % Test
 ```
 
 Example
@@ -38,9 +39,9 @@ Example
 
 If you have `README.md`:
 
-> \`\`\` scala  
-> val foo = "bar"  
-> foo shouldBe "bar"  
+> \`\`\` scala
+> val foo = "bar"
+> foo shouldBe "bar"
 > \`\`\`
 
 plugin will create `target/scala-2.11/src_managed/test/READMETest.scala`:
