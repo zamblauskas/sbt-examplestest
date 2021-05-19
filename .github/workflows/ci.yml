@@ -1,0 +1,24 @@
+---
+name: ci
+
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches:
+    - master
+  pull_request:
+
+jobs:
+  test:
+    name: Compile and test
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+    - uses: actions/checkout@v2.3.4
+    - uses: coursier/cache-action@v6
+    - uses: laughedelic/coursier-setup@v1
+      with:
+        jvm: adopt:11
+        apps: sbtn
+    - run: sbtn compile
+    - run: sbtn test

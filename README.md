@@ -1,5 +1,9 @@
-[![Build Status](https://travis-ci.org/zamblauskas/sbt-examplestest.svg?branch=master)](https://travis-ci.org/zamblauskas/sbt-examplestest)
-[![Bintray Download](https://api.bintray.com/packages/zamblauskas/sbt-plugins/sbt-examplestest/images/download.svg)](https://bintray.com/zamblauskas/sbt-plugins/sbt-examplestest/_latestVersion)
+[![scaladex-badge][]][scaladex] [![ci-badge][]][ci]
+
+[scaladex]:           https://index.scala-lang.org/zamblauskas/sbt-examplestest
+[scaladex-badge]:     https://index.scala-lang.org/zamblauskas/sbt-examplestestlatest.svg
+[ci]:                 https://github.com/zamblauskas/sbt-examplestest/actions
+[ci-badge]:           https://github.com/zamblauskas/sbt-examplestest/workflows/ci/badge.svg
 
 About
 ==============================
@@ -8,12 +12,10 @@ SBT plugin to generate unit tests for code examples in markdown (e.g. README) fi
 Usage
 ==============================
 
-Package is available at [Bintray](https://bintray.com/zamblauskas/sbt-plugins/sbt-examplestest).
+Package is available at [Maven Central](https://mvnrepository.com/artifact/io.github.zamblauskas/sbt-exampletest).
 Check for the latest version and add to your `project/plugins.sbt`:
 ```scala
-resolvers += Resolver.bintrayIvyRepo("zamblauskas", "sbt-plugins")
-
-addSbtPlugin("zamblauskas" % "sbt-examplestest" % "<latest_version>")
+addSbtPlugin("io.github.zamblauskas" % "sbt-examplestest" % "<latest_version>")
 ```
 
 | version  | SBT  | scalatest |
