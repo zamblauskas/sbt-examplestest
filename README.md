@@ -12,7 +12,7 @@ SBT plugin to generate unit tests for code examples in markdown (e.g. README) fi
 Usage
 ==============================
 
-Package is available at [Maven Central](https://mvnrepository.com/artifact/io.github.zamblauskas/sbt-exampletest).
+Package is available at [Maven Central](https://mvnrepository.com/artifact/io.github.zamblauskas/sbt-examplestest).
 Check for the latest version and add to your `project/plugins.sbt`:
 ```scala
 addSbtPlugin("io.github.zamblauskas" % "sbt-examplestest" % "<latest_version>")
