@@ -1,5 +1,4 @@
-organization := "zamblauskas"
-
+organization := "io.github.zamblauskas"
 name := "sbt-examplestest"
 
 scalaVersion := "2.12.10"
@@ -15,3 +14,14 @@ libraryDependencies ++= Seq(
 sbtPlugin := true
 
 licenses := ("MIT", url("https://opensource.org/licenses/MIT")) :: Nil
+startYear := Some(2017)
+organizationName := "github.com/zamblauskas/sbt-examplestest/graphs/contributors"
+homepage := Some(url("https://github.com/zamblauskas/sbt-examplestest"))
+developers := List(
+  Developer(
+    "contributors",
+    "Contributors",
+    "https://github.com/zamblauskas/sbt-examplestest/graphs/contributors",
+    url("https://github.com/zamblauskas/sbt-examplestest/graphs/contributors")
+  )
+)
