@@ -1,7 +1,7 @@
 [![scaladex-badge][]][scaladex] [![ci-badge][]][ci]
 
 [scaladex]:           https://index.scala-lang.org/zamblauskas/sbt-examplestest
-[scaladex-badge]:     https://index.scala-lang.org/zamblauskas/sbt-examplestestlatest.svg
+[scaladex-badge]:     https://index.scala-lang.org/zamblauskas/sbt-examplestest/sbt-examplestest/latest.svg
 [ci]:                 https://github.com/zamblauskas/sbt-examplestest/actions
 [ci-badge]:           https://github.com/zamblauskas/sbt-examplestest/workflows/ci/badge.svg
 
