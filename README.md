@@ -18,23 +18,16 @@ Check for the latest version and add to your `project/plugins.sbt`:
 addSbtPlugin("io.github.zamblauskas" % "sbt-examplestest" % "<latest_version>")
 ```
 
-| version  | SBT  | scalatest |
-|----------|------|-----------|
-| 0.1.1    | 0.13 | 3.0.4     |
-| 0.1.2    | 1.x  | 3.0.4     |
-| 0.2.0+   | 1.x  | 3.1.0     |
+| version  | SBT  | scalatest | munit-cats-effect-3 |
+|----------|------|-----------|---------------------|
+| 0.1.1    | 0.13 | 3.0.4     |                     |
+| 0.1.2    | 1.x  | 3.0.4     |                     |
+| 0.2.0+   | 1.x  | 3.1.0     | 1.0.3               |
 
 Plugin will be enabled by default.
-It will find all `.md` files in the base directory, generate unit test code for every Scala block (marked as \`\`\` scala) and put it in `target/scala-<version>/src_managed/test`.
+It will detect the testing library used in the project and select corresponding code generator.
+Then it will find all `.md` files in the base directory, generate unit test code for every Scala block (marked as \`\`\` scala) and put it in `target/scala-<version>/src_managed/test`.
 Tests will be run during `sbt test`.
-
-Dependencies
-==============================
-
-Your project must have a `ScalaTest` library on path. E.g.:
-```scala
-"org.scalatest" %% "scalatest" % "3.1.0" % Test
-```
 
 Example
 ==============================
